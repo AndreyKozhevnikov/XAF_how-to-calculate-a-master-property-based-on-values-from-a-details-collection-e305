@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application Title="WinWebSolution" Logo="ExpressAppLogo">
+  <Views>
+    <ListView ID="Product_Orders_ListView" AllowEdit="True">
+      <Columns>
+        <ColumnInfo PropertyName="Total" Width="200" SummaryType="Sum" />
+        <ColumnInfo PropertyName="Description" Width="200" SummaryType="Count" />
+      </Columns>
+    </ListView>
+    <ListView ID="Product_ListView">
+      <Columns>
+        <ColumnInfo PropertyName="Name" Width="100" />
+        <ColumnInfo PropertyName="OrdersCount" Width="100" />
+        <ColumnInfo PropertyName="MaximumOrder" Width="100" />
+        <ColumnInfo PropertyName="OrdersTotal" Width="100" />
+      </Columns>
+    </ListView>
+  </Views>
+	<BOModel>
+		<Class Name="WinWebSolution.Module.Order" ImageName="BO_Order" />
+		<Class Name="WinWebSolution.Module.Product" ImageName="BO_Product" />
+	</BOModel>	
+</Application>
